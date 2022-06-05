@@ -7,7 +7,7 @@ Our robot design is a pantograph which is a four arm system that is in the shape
 
 ![](https://lh3.googleusercontent.com/VpWdBGfe5-kW8ZgftB_aWzzwjMEnx6wKVJPlnYnYD9fGmKcYjSbUZqbXB5KMlNxkdVca4KqH4CZ603ecd722fz2FwgLVDwBZEcgv3KszZG2UAlkjGtGHvNzk3ONnzmQqn2sJ1UJWS3V1sfSuZA)
 
-Figure 1:  3D model of pantograph robot
+                           Figure 1:  3D model of pantograph robot
 
 
 # Functionality
@@ -16,7 +16,7 @@ The Functionality of the Pantograph is intended to draw basic shapes, with two a
 
  ![](https://lh5.googleusercontent.com/T0cRWkhbxK-MXzfXxGjWTbJcIgwyhon9k7yBEBZxtkiSFOTmJ1Ip8k-LHWIZsck75ZtYuF5Xo3p2rZGNfSjTts83YjL7cMl2vIwxmjNH7Mdf3pPHSIeT4A003c1InLkYMMwtr3O-D5hjxr-4CA)
 
-Figure 2: Pantograph Drawing a Square
+                           Figure 2: Pantograph Drawing a Square
 
 
 # Kinematics
@@ -48,7 +48,7 @@ inputs , since the user wants to input coordinates and the robot needs to calcul
 
 ![{"code":"$x\\\\,=\\\\,\\\\begin{bmatrix}\\n{x\_{1}}\\\\\\\\\\n{y\_{1}}\\\\\\\\\\n{x\_{2}}\\\\\\\\\\n{y\_{2}}\\\\\\\\\\n\\\\end{bmatrix}\\\\,\\\\,\\\\,\\\\,\\\\,\\\\,\\\\,\\\\theta=\\\\,\\\\begin{bmatrix}\\n{\\\\theta\_{1}}\\\\\\\\\\n{\\\\theta\_{2}}\\\\\\\\\\n{\\\\theta\_{3}}\\\\\\\\\\n{\\\\theta\_{4}}\\\\\\\\\\n\\\\end{bmatrix}$","font":{"size":12,"family":"Arial","color":"#000000"},"backgroundColorModified":null,"type":"$","backgroundColor":"#ffffff","aid":null,"id":"2","ts":1654412068226,"cs":"zi561YJ5Q1NmavdhpTvucw==","size":{"width":178,"height":96}}](https://lh5.googleusercontent.com/UPikbzpQI_eUs56mRxh02Td5MfcteSHq6jgsJkJ6tFQ0vb5BDeTuUP70Ao3Q0oic_n38Tg9kalGzd2bXNMq70Lpenjgf7esmZsv3KB8Mr99waoDYne2eYjLnP8ckblRX4MXufRBxuG8dugf9eg)          ![{"backgroundColorModified":null,"code":"\\\\begin{lalign\*}\\n&{f\\\\left(\\\\theta\\\\right)\\\\,=\\\\,\\\\begin{bmatrix}\\n{L\_{1}C\_{1}\\\\,+\\\\,L\_{2}\\\\,C\_{2}}\\\\\\\\\\n{L\_{1}S\_{1}+L\_{2}S\_{2}}\\\\\\\\\\n{L\_{4}C\_{4}+\\\\,L\_{3}C\_{3}\\\\,+\\\\,L\_{0}}\\\\\\\\\\n{L\_{4}S\_{4}\\\\,+\\\\,L\_{3}S\_{3}}\\\\\\\\\\n\\\\end{bmatrix}}\\\\\\\\\\n\\\\end{lalign\*}","aid":null,"id":"1","type":"lalign\*","font":{"size":12,"color":"#000000","family":"Arial"},"backgroundColor":"#ffffff","ts":1654411268748,"cs":"/nUKiVSL8doq2PNEYigMfQ==","size":{"width":240,"height":96}}](https://lh6.googleusercontent.com/MaHJt8hKjZuKQyMfhKU-PcWNhZK57VS_J71nArMXnCGbJD19ldHzi7aDaFGN-Kbm5w4pUwxXcQt3Ow9iqD0D0FnQj6BD4XVBrpp_8wmimRj5AQm50kVxCrqDtTzMn86tZut4t3qXbzOWHRKWxw)  
 
-Figure 3 - x, 𝛉, and  f(𝛉) set  as matrices.
+                        Figure 3 - x, 𝛉, and  f(𝛉) set  as matrices.
 
  
 
@@ -58,13 +58,13 @@ Once set, the Jacobian matrix was found 
   
 ![{"code":"$$\\\\frac{\\\\partial f}{\\\\partial \\\\theta}\\\\,=\\\\,\\\\begin{bmatrix}\\n{\\\\frac{\\\\partial f\_{1}}{\\\\partial\\\\,\\\\theta\_{1}}}&{\\\\frac{\\\\partial f\_{1}}{\\\\partial\\\\,\\\\theta\_{2}}}&{\\\\frac{\\\\partial f\_{1}}{\\\\partial\\\\,\\\\theta\_{3}}}&{\\\\frac{\\\\partial f\_{1}}{\\\\partial\\\\,\\\\theta\_{4}}}\\\\\\\\\\n{\\\\frac{\\\\partial f\_{2}}{\\\\partial\\\\,\\\\theta\_{1}}}&{\\\\frac{\\\\partial f\_{2}}{\\\\partial\\\\,\\\\theta\_{2}}}&{\\\\frac{\\\\partial f\_{2}}{\\\\partial\\\\,\\\\theta\_{3}}}&{\\\\frac{\\\\partial f\_{2}}{\\\\partial\\\\,\\\\theta\_{4}}}\\\\\\\\\\n{\\\\frac{\\\\partial f\_{3}}{\\\\partial\\\\,\\\\theta\_{1}}}&{\\\\frac{\\\\partial f\_{3}}{\\\\partial\\\\,\\\\theta\_{2}}}&{\\\\frac{\\\\partial f\_{3}}{\\\\partial\\\\,\\\\theta\_{3}}}&{\\\\frac{\\\\partial f\_{3}}{\\\\partial\\\\,\\\\theta\_{4}}}\\\\\\\\\\n{\\\\frac{\\\\partial f\_{4}}{\\\\partial\\\\,\\\\theta\_{1}}}&{\\\\frac{\\\\partial f\_{4}}{\\\\partial\\\\,\\\\theta\_{2}}}&{\\\\frac{\\\\partial f\_{4}}{\\\\partial\\\\,\\\\theta\_{3}}}&{\\\\frac{\\\\partial f\_{4}}{\\\\partial\\\\,\\\\theta\_{4}}}\\\\\\\\\\n\\\\end{bmatrix}=\\\\,\\\\begin{bmatrix}\\n{-L\_{1}S\_{1}}&{-L\_{2}S\_{2}}&{0}&{0}\\\\\\\\\\n{L\_{1}C\_{1}}&{L\_{2}C\_{2}}&{0}&{0}\\\\\\\\\\n{0}&{0}&{-L\_{3}S\_{3}}&{-L\_{4}S\_{4}}\\\\\\\\\\n{0}&{0}&{L\_{3}C\_{3}}&{L\_{4}C\_{4}}\\\\\\\\\\n\\\\end{bmatrix}$$","type":"$$","id":"4","backgroundColor":"#ffffff","font":{"color":"#000000","size":12,"family":"Arial"},"backgroundColorModified":null,"aid":null,"ts":1654421552571,"cs":"ArF1vGYG4D31rhdmQ5y8cA==","size":{"width":580,"height":132}}](https://lh5.googleusercontent.com/WyfYMGaHVoXaQqrylKBHGdzjN-mPojGH4m7l6-xPRoicce-tdxF1E7cdKnxED6wv0TtxNBd1a0cWKhU-yDWvL9f9sOCrrIpNJbRA-6n4xPXYbrY8_R4Bbq9oTz78FoKgDay43ZSDZWCfjxtZZA)
 
-Figure 4 - Jacobian Matrix of f(𝛉)
+                         Figure 4 - Jacobian Matrix of f(𝛉)
 
 Hence the coordinates , x is now a function of 𝛉 and since the Jacobian matrix is found, the it is possible to find the velocity kinematics  of the system  .
 
 ![{"type":"$$","code":"$$\\\\vec{x}\\\\,=\\\\,\\\\frac{\\\\partial f}{\\\\partial \\\\theta}\\\\vec{\\\\theta}$$","backgroundColorModified":null,"aid":null,"backgroundColor":"#ffffff","id":"5","font":{"family":"Arial","color":"#000000","size":12},"ts":1654421850057,"cs":"l2C6noFcvetHQb4cTmzlRg==","size":{"width":80,"height":38}}](https://lh6.googleusercontent.com/SeRpynXu360B1DU9pmwEHeZYSLIxbeMOXF51HJsKSADeJuenNDQyT50TGHbavNqx51a4WfFcyTrVxswh6mKbceGHpC8Kq7PVOKjp0spetVOt0Apl11iMwsOLJeL5Nim4bYf1DJ9dWJ0vBgcrmg)
 
-Figure 5 - Velocity Kinematics of the Pantograph
+                  Figure 5 - Velocity Kinematics of the Pantograph
 
  
 
@@ -78,14 +78,14 @@ Due to the level of complexity of the kinematics ,the velocity kinematics is uti
 
 ![{"backgroundColor":"#ffffff","code":"$$g\\\\left(\\\\theta\\\\right)\\\\,=\\\\,\\\\vec{x\\\\,\\\\,}-\\\\,f\\\\left(\\\\theta\\\\right)\\\\,\\\\,\\\\,\\\\,\\\\to\\\\,g\\\\left(\\\\theta\\\\right)\\\\,=\\\\,\\\\begin{bmatrix}\\n{x\_{1}-\\\\,\\\\left(L\_{1}C\_{1}\\\\,+\\\\,L\_{2}C\_{2}\\\\right)}\\\\\\\\\\n{x\_{2}\\\\,-\\\\,\\\\left(L\_{1}S\_{1}\\\\,+\\\\,L\_{2}S\_{2}\\\\right)}\\\\\\\\\\n{x\_{2}\\\\,-\\\\,\\\\left(L\_{4}C\_{4}\\\\,+\\\\,L\_{3}C\_{3}\\\\,+\\\\,L\_{0}\\\\right)}\\\\\\\\\\n{y\_{2}\\\\,-\\\\,\\\\left(L\_{4}S\_{4}\\\\,+\\\\,L\_{3}S\_{3}\\\\right)}\\\\\\\\\\n\\\\end{bmatrix}$$","font":{"size":12,"family":"Arial","color":"#000000"},"type":"$$","aid":null,"id":"6","backgroundColorModified":null,"ts":1654423199916,"cs":"Rz47LMwR0hhp4hLrypShrg==","size":{"width":492,"height":97}}](https://lh4.googleusercontent.com/Ep_CjqwuiIyHrJQvy0096rPp5gjYAANjyxRjTxyH-D0-DHGvl2KnayWaSLsFVWF-LdCgvv-u0oNnEJ0k_yKSciXNSBP3gDQRyzSEkyI3I9USxboy0ztfLzM4e7GHR8lk8SRVIwTcosSj9UynHg)
 
-Figure 6 - Finding g()
+                                 Figure 6 - Finding g()
 
   
 
 
                               ![{"backgroundColorModified":null,"backgroundColor":"#ffffff","id":"7","type":"$$","aid":null,"code":"$$\\\\frac{\\\\partial g\\\\left(\\\\theta\_{n}\\\\right)}{d\\\\theta}\\\\,=\\\\,\\\\begin{bmatrix}\\n{L\_{1}S\_{1}}&{L\_{2}S\_{2}}&{0}&{0}\\\\\\\\\\n{-L\_{1}C\_{1}}&{-L\_{2}C\_{2}}&{0}&{0}\\\\\\\\\\n{0}&{0}&{L\_{3}S\_{3}}&{L\_{4}S\_{4}}\\\\\\\\\\n{0}&{0}&{-L\_{3}C\_{3}}&{-L\_{4}C\_{4}}\\\\\\\\\\n\\\\end{bmatrix}$$","font":{"color":"#000000","size":12,"family":"Arial"},"ts":1654423400193,"cs":"2fa68sfshI1yrBas1HerIg==","size":{"width":388,"height":96}}](https://lh4.googleusercontent.com/uVd4jlfWXIzsQUbK18YvJzxMfkeNVN-vo9rTG_4z8mKSRKvrwPT5IFjafqfkYhjAiQRzHCazzfWBHR-wEQPmVgS52zmkmuHO23CQmcySZ57XpBUmCMqYNpWcgp7mtoLqwPKKWQYlKRgjh59-Yw)
 
-Figure 7 - Finding g 
+                                 Figure 7 - Finding g 
 
   
   
@@ -95,7 +95,7 @@ This new equation ( see figure 6) is selected so when g() is 0.  You can find t
 
 ![](https://lh4.googleusercontent.com/IVlWaVFTWoG-xt6uuE6gazzXnaKoL-hC1S-pEP6BKqdsz3JR9qHrv3O0QuaqRZkLL_8lLdKpjvE4PwVifHM9MJHQ6cZwSY1G-U6iOLtY0_Cu6kYsl610gFY6tQc8ADrldXCNUPfdRvExjqSC_A) 
 
-Figure 8 - Newton-Raphson algorithm
+                        Figure 8 - Newton-Raphson algorithm
 
 where  n is the step number or number of iterations through the algorithm. The algorithm must stop when the value of g() is sufficiently close to zero by a threshold.
 
@@ -109,7 +109,7 @@ where  n is the step number or number of iterations through the algorithm. The 
 
 ![](https://lh5.googleusercontent.com/1vBJYaGHsKCikl1YIUacQAhSLmJk_YMY1pttdZAF2zek8ftSsYyJaY4EwaEkUeyt21KKSeAvwmd2ZAe2iKm-lk5GdiSXYxyuAbziQ_hIvZ2OnSRw3moQdM7kPO08PurzoJ4Ka_Z2PjdgbjjNkQ)
 
-Figure X: Class diagram of the motor driver class
+                        Figure 9: Class diagram of the motor driver class
 
 For the driver design we wanted to implement a simple driver class that would work with both motors and cover the basic functionality. The init class sets up the TMC2208 and TMC 4210 motor drivers to allow the motor to move. It sets up the necessary pins and SPI signals on the nucleo board as well as the clock, velocity, acceleration, movement mode, and so on. The set velocity, set acceleration, and acceleration calculations methods are used in the init class to set up the TMC chips. The send and receive methods will take the datagram to be sent and will pull the chip select signal for a specific peripheral low and send the datagram through SPI. The set position method will take the target position datagram as a parameter. The target position is then passed into the function and bit masked,  so that the correct value is sent to the X position register of the TMC 4210. The read position method will read the data in the X actual register of the TMC 4210 and return the data it read.
 
@@ -134,7 +134,7 @@ If the value read is pen down (PD), then it will raise a pen down flag and go to
 
 ![](https://lh5.googleusercontent.com/eZY9oj1B-tgagYBqYxZP7BFMt04oPPsytAyZ6sbHoDVi7q2e2kgu7UfzPZHqlJaRcf-iVPfsXUkSk0UZSfLhM5LsmNyOMyzaHU6hrOATNaVLkEcDYG4-IXV6X1CNY7AD_etEVT5Oh4vAMTIAiQ)
 
-Figure 9- state diagram of task management
+                         Figure 10- state diagram of task management
 
 
 # Issues/Improvements to make
