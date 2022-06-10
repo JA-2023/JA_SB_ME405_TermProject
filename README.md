@@ -186,6 +186,7 @@ Link 2: Video of LCD screen displaying motor position values
 
 ![](https://lh6.googleusercontent.com/vqunGED6_XVOLW2GzFY2TiMk3zumfJiHRfkD8eHOkKTmSa0NRtze8xbB0s-nmaeZQWo15JhnMOyechNu9fneflCPHrYLdmPUc3BpPQtbX5LOYdmr2bVfysCIGCGPFMTp3iExqwm92hgb_2qm1A)
 
-                                  Figure 13: Motor driver board under platform connected to power supply and stepper motors![](https://lh4.googleusercontent.com/H1tBMMkU9hrhPaxzceLJa7FawflzK02mjZ8etG1ZEA97BvmrS-xddlbrwwoPycsVyCKBj8gmacg2xwmVF0Vzj8Yeg-rokCfPRYSHeBm-CHk73_V4zoh-YoA2dgY7kM8G5OTUqrs-45Y2ZnyRAA)
+                                  Figure 13: Motor driver board under platform connected to power supply and stepper motors
+  ![](https://lh4.googleusercontent.com/H1tBMMkU9hrhPaxzceLJa7FawflzK02mjZ8etG1ZEA97BvmrS-xddlbrwwoPycsVyCKBj8gmacg2xwmVF0Vzj8Yeg-rokCfPRYSHeBm-CHk73_V4zoh-YoA2dgY7kM8G5OTUqrs-45Y2ZnyRAA)
 
                           Figure 14: STM Nucleo board connected to stepper driver and bread board with circuitry for driving the solenoid.
